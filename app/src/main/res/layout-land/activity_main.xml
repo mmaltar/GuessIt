@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rll"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/leftbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/level_info"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_info"
+            android:text="@string/userinfo"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score_view"
+            android:textSize="35sp"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:id="@+id/mygridl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:columnCount="12"
+        android:rowCount="12"
+        android:background="@android:color/background_light" >
+    </GridLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/rightbar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timer"
+            android:layout_gravity="center_horizontal"
+            android:textSize="35sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:id="@+id/guessbtn"
+            android:layout_gravity="center_vertical"
+            android:text="@string/guessit"
+            android:onClick="guessIt"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guess_left_view"
+            android:textSize="35sp"
+
+            android:layout_gravity="bottom"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    </RelativeLayout>

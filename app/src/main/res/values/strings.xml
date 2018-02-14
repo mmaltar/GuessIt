@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Aplikacija</string>
+    <string name="start">Start</string>
+    <string name="username">Enter your username</string>
+    <string name="guessit">Guess It!</string>
+    <string name="nextLevel">Next Level</string>
+    <string name="gameover">GAME OVER</string>
+    <string name="newGame">New Game</string>
+    <string name="userinfo">User info</string>
+
+</resources>

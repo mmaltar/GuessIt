@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <TextView
+        android:id="@+id/gameover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gameover"
+        android:layout_centerInParent="true"
+        android:textSize="50sp"
+        />
+
+    <TextView
+        android:id="@+id/score_gameover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameover"
+        android:layout_centerInParent="true"
+        android:textSize="25sp"
+
+        />
+
+    <Button
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/next_btn"
+        android:text="@string/newGame"
+        android:layout_below="@id/score_gameover"
+        android:onClick="newGame"
+        />
+
+
+
+
+</RelativeLayout>

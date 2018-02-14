@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/topbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_info"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/level_info"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:id="@+id/timer"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="35sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+        <GridLayout
+            android:id="@+id/mygridp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:columnCount="12"
+            android:rowCount="12"
+            android:background="@android:color/background_light" >
+        </GridLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/bottombar"
+        android:layout_above="@id/mygridp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score_view"
+            android:layout_gravity="center_vertical"
+            android:textSize="35sp"
+
+            />
+
+        <Button
+            android:id="@+id/guessbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:onClick="guessIt"
+            android:text="Guess It!" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guess_left_view"
+            android:layout_alignParentRight="true"
+            android:textSize="35sp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
